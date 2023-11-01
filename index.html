@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Calculator</title>
+</head>
+<body id="body">
+    <!-- <div class="change-body">
+       
+    <input onclick="bgChange()" type="checkbox" name="" id="checkbox">
+     <label id="darkmode" for="">Dark Mode</label>
+    </div>     -->
+    <div class="container">
+
+        
+        <div class="calculator">
+            <input type="text" placeholder="0" id="output-screen">
+            <div class=" button-div clear-del-container">
+                <button class="oparator" onclick="allClear()">AC</button>
+                <button class="oparator" onclick="del()">del</button>
+                <button class="oparator" onclick="display('%')">%</button>
+                <button class="oparator" onclick="display('/')">/</button>
+            </div>
+            <div class=" button-div 7-8-9-multiply">
+                <button onclick="display('7')">7</button>
+                <button onclick="display('8')">8</button>
+                <button onclick="display('9')">9</button>
+                <button class="oparator" onclick="display('*') ">&times;</button>
+            </div>
+            <div class=" button-div 4-5-6-">
+                <button onclick="display('4')">4</button>
+                <button onclick="display('5')">5</button>
+                <button onclick="display('6')">6</button>
+                <button class="oparator" onclick="display('-')">-</button>
+            </div>
+            <div class=" button-div 1-2-3">
+                <button onclick="display('1')">1</button>
+                <button onclick="display('2')">2</button>
+                <button onclick="display('3')">3</button>
+                <button class="oparator" onclick="display('+')">+</button>
+            </div>
+            <div class=" button-div 00-0">
+                <button onclick="display('00')">00</button>
+                <button onclick="display('0')">0</button>
+                <button onclick="display('.')">.</button>
+                <button onclick="calculate()" id="equal">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js">
+    </script>
+</body>
+
+</html>
